@@ -43,7 +43,7 @@ export default class TodoApp extends React.Component{
             return item.id !== deletedItemId
           })
           this.setState({
-            items: filteredItems,
+            items: filteredItems
           })
     }
 
@@ -52,7 +52,7 @@ export default class TodoApp extends React.Component{
             <main className='d-flex flex-column text-center align-items-center'>
                 <h3 className='display-4'>Todo List</h3>
                 <TodoList items={this.state.items} onDelete={this.handleDelete} />
-                <div className="input-group col-3 m-3">
+                <div className="input-group col-12 col-sm-8 col-md-6 col-lg-4 mt-2 p-1">
                     <div className="input-group-prepend">
                         <button className="btn btn-outline-success" type="button" onClick={this.handleClick}>Add new task</button>
                     </div>

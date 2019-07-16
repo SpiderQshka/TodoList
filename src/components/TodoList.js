@@ -9,7 +9,7 @@ render(){
             </li>
         ));
         return (
-            <ul className='list-group w-25'>
+            <ul className='list-group col-12 col-sm-8 col-md-6 col-lg-4 mt-2 p-1'>
                 {list}
             </ul>
         )
